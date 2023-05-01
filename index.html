@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Trucking Load Board</title>
+</head>
+<body>
+	<header>
+		<h1>Trucking Load Board</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Find Loads</a></li>
+				<li><a href="#">Post Truck</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Find Loads</h2>
+			<form>
+				<label for="origin">Origin:</label>
+				<input type="text" id="origin" name="origin">
+				<label for="destination">Destination:</label>
+				<input type="text" id="destination" name="destination">
+				<label for="date">Date:</label>
+				<input type="date" id="date" name="date">
+				<input type="submit" value="Search">
+			</form>
+		</section>
+		<section>
+			<h2>Available Loads</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Load ID</th>
+						<th>Origin</th>
+						<th>Destination</th>
+						<th>Equipment Type</th>
+						<th>Rate</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>12345</td>
+						<td>New York, NY</td>
+						<td>Los Angeles, CA</td>
+						<td>53' Van</td>
+						<td>$2.00/mile</td>
+					</tr>
+					<tr>
+						<td>67890</td>
+						<td>Chicago, IL</td>
+						<td>Dallas, TX</td>
+						<td>Flatbed</td>
+						<td>$3.50/mile</td>
+					</tr>
+					<tr>
+						<td>24680</td>
+						<td>Miami, FL</td>
+						<td>Seattle, WA</td>
+						<td>Refrigerated</td>
+						<td>$2.75/mile</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Trucking Load Board</p>
+	</footer>
+</body>
+</html>
