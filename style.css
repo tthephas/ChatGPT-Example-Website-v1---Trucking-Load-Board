@@ -66,6 +66,8 @@
   }
   
   h2 {
+    color: red;
+    font-size: 36px;
     margin-bottom: 1rem;
   }
   
@@ -134,6 +136,10 @@ button {
     text-align: center;
     filter: none;
   }
+
+.load-link {
+    color: aqua;
+}
 /* 
 Hide load rows by default
 #loads-table-body tr:not(.show-details) {
