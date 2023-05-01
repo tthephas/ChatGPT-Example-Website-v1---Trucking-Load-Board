@@ -55,7 +55,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
-    background-image: url('background-image.jpg');
+    /* background-image: url('background-image.jpg'); */
     background-size: cover;
     background-position: center;
 
@@ -73,6 +73,22 @@
     display: block;
     margin-bottom: 0.5rem;
   }
+
+  /* Style search button */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  button:hover {
+    background-color: #D9D9D9;
+    color: #333;
+  }
+  
   
   form input[type="text"],
   form input[type="date"],

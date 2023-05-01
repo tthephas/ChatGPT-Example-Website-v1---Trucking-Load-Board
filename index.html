@@ -23,17 +23,17 @@
 			<h2>Find Loads</h2>
 			<form>
 				<label for="origin">Origin:</label>
-				<input type="text" id="origin" name="origin">
+				<input type="text" id="origin-input" name="origin">
 				<label for="destination">Destination:</label>
-				<input type="text" id="destination" name="destination">
+				<input type="text" id="dest-input" name="destination">
 				<label for="date">Date:</label>
 				<input type="date" id="date" name="date">
-				<input type="submit" value="Search">
+				<button id="search-button">Search</button>
 			</form>
 		</section>
 		<section>
 			<h2>Available Loads</h2>
-			<table>
+			<table id="loads-table-body">
 				<thead>
 					<tr>
 						<th>Load ID</th>
@@ -65,6 +65,77 @@
 						<td>Refrigerated</td>
 						<td>$2.75/mile</td>
 					</tr>
+                    <tr>
+                        <td>12345</td>
+                        <td>Los Angeles, CA</td>
+                        <td>New York, NY</td>
+                        <td>Dry Van</td>
+                        <td>$3.50/mile</td>
+                      </tr>
+                      <tr>
+                        <td>23456</td>
+                        <td>Chicago, IL</td>
+                        <td>Miami, FL</td>
+                        <td>Flatbed</td>
+                        <td>$2.75/mile</td>
+                      </tr>
+                      <tr>
+                        <td>34567</td>
+                        <td>Dallas, TX</td>
+                        <td>Seattle, WA</td>
+                        <td>Reefer</td>
+                        <td>$3.00/mile</td>
+                      </tr>
+                      <tr>
+                        <td>45678</td>
+                        <td>Atlanta, GA</td>
+                        <td>San Francisco, CA</td>
+                        <td>Dry Van</td>
+                        <td>$4.00/mile</td>
+                      </tr>
+                      <tr>
+                        <td>56789</td>
+                        <td>Denver, CO</td>
+                        <td>Boston, MA</td>
+                        <td>Flatbed</td>
+                        <td>$2.50/mile</td>
+                      </tr>
+                      <tr>
+                        <td>67890</td>
+                        <td>Phoenix, AZ</td>
+                        <td>Philadelphia, PA</td>
+                        <td>Reefer</td>
+                        <td>$3.25/mile</td>
+                      </tr>
+                      <tr>
+                        <td>78901</td>
+                        <td>Houston, TX</td>
+                        <td>Portland, OR</td>
+                        <td>Dry Van</td>
+                        <td>$3.75/mile</td>
+                      </tr>
+                      <tr>
+                        <td>89012</td>
+                        <td>Seattle, WA</td>
+                        <td>Atlanta, GA</td>
+                        <td>Flatbed</td>
+                        <td>$2.50/mile</td>
+                      </tr>
+                      <tr>
+                        <td>90123</td>
+                        <td>Miami, FL</td>
+                        <td>Denver, CO</td>
+                        <td>Reefer</td>
+                        <td>$3.50/mile</td>
+                      </tr>
+                      <tr>
+                        <td>01234</td>
+                        <td>Boston, MA</td>
+                        <td>Los Angeles, CA</td>
+                        <td>Dry Van</td>
+                        <td>$4.25/mile</td>
+                      </tr>
+
 				</tbody>
 			</table>
 		</section>
