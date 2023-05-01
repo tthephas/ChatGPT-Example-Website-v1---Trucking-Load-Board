@@ -1,17 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@400;700&display=swap');
-
+/* Reset default browser styles */
 * {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
     margin: 0;
-
-}
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+  header ul li:not(:first-child) {
+    margin-left: 1rem;
+  }
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  header ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Style main */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  section {
+    width: 100%;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input[type="text"],
+  form input[type="date"],
+  form input[type="submit"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 20rem;
+  }
+  
+  form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
