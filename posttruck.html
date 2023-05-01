@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post a Truck</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Post a Truck</h1>
+	<form id="truck-form" method="POST">
+        <label for="origin-input">Origin:</label>
+        <input type="text" id="origin-input" name="origin" required><br><br>
+        
+        <label for="destination-input">Destination:</label>
+        <input type="text" id="destination-input" name="destination" required><br><br>
+        
+        <label for="equipment-input">Equipment Type:</label>
+        <input type="text" id="equipment-input" name="equipment" required><br><br>
+        
+        <label for="rate-input">Rate Needed:</label>
+        <input type="text" id="rate-input" name="rate" required><br><br>
+        
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+      
+      <table id="truck-table">
+        <thead>
+          <tr>
+            <th>Origin</th>
+            <th>Destination</th>
+            <th>Equipment Type</th>
+            <th>Rate Needed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Truck posts will be added here dynamically -->
+        </tbody>
+      </table>
+      
+      
+</body>
+</html>

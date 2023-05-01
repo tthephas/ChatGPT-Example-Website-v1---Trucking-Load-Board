@@ -47,3 +47,36 @@ loadLinks.forEach(link => {
     loadRow.scrollIntoView();
   });
 });
+
+
+// Get the form and table elements
+const form = document.querySelector('#truck-form');
+const table = document.querySelector('#truck-table tbody');
+
+// Add a submit event listener to the form
+form.addEventListener('submit', (event) => {
+  // Prevent the form from submitting the data and refreshing the page
+  event.preventDefault();
+  
+  // Get the input values
+  const origin = document.querySelector('#origin-input').value;
+  const destination = document.querySelector('#destination-input').value;
+  const equipment = document.querySelector('#equipment-input').value;
+  const rate = document.querySelector('#rate-input').value;
+  
+  // Create a new table row and cells for the input values
+  const row = table.insertRow();
+  const originCell = row.insertCell(0);
+  const destinationCell = row.insertCell(1);
+  const equipmentCell = row.insertCell(2);
+  const rateCell = row.insertCell(3);
+  
+ // Set the cell values to the input values
+ originCell.textContent = origin;
+ destinationCell.textContent = destination;
+ equipmentCell.textContent = equipment;
+ rateCell.textContent = rate;
+ 
+ // Clear the form inputs
+ form.reset();
+});

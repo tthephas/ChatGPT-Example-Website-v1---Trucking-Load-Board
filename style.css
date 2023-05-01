@@ -151,5 +151,41 @@ Hide load rows by default
     display: table-row;
   } 
 */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: #fff;
+  }
+  
+  label {
+    margin: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
+  input[type="text"], select {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
   
   
