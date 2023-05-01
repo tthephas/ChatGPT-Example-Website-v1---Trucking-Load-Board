@@ -25,3 +25,25 @@ searchButton.addEventListener("click", function() {
     }
   }
 });
+
+// Get all load ID links
+const loadLinks = document.querySelectorAll('.load-link');
+
+// Add click event listener to each load ID link
+loadLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault(); // prevent default link behavior
+
+    // Get load ID from data-load-id attribute
+    const loadId = link.dataset.loadId;
+
+    // Find the row with the matching load ID
+    const loadRow = document.querySelector(`tr td a[data-load-id="${loadId}"]`).parentNode.parentNode;
+
+    // Add a class to the row to show it
+    loadRow.classList.add('show-details');
+
+    // Scroll to the row
+    loadRow.scrollIntoView();
+  });
+});

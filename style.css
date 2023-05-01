@@ -134,4 +134,16 @@ button {
     text-align: center;
     filter: none;
   }
+/* 
+Hide load rows by default
+#loads-table-body tr:not(.show-details) {
+    display: none;
+  }
+  
+  /* Show load rows when .show-details is added 
+  #loads-table-body tr.show-details {
+    display: table-row;
+  } 
+*/
+  
   
